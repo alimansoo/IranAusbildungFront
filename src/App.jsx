@@ -10,6 +10,7 @@ import ContactUs from './pages/contact_us';
 import AboutUs from './pages/about_us';
 import FAQ from './pages/faq';
 import Login from './pages/login';
+import Register from './pages/register';
 // import RequrieAuth from './features/requireAuth';
 // import Welcome from './features/Welcome';
 // import Layout from './components/layout';
@@ -35,6 +36,7 @@ const App = () => {
       <Route path="about_us" element={<AboutUs />} />
       <Route path="faq" element={<FAQ />} />
       <Route path="login" element={<Login />} />
+      <Route path="register" element={<Register />} />
       {/* protected routes */}
       {/* <Route element={<RequrieAuth />}>
         <Route path='welcome' element={<Welcome/>} />
