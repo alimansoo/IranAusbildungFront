@@ -28,7 +28,7 @@ import image2 from '../images/image 2.png'
 import image1 from '../images/image 1.png'
 import Button from '../components/button';
 import MainContainer from '../components/container';
-import Card from '../components/card';
+// import Card from '../components/card';
 // import Slider from "react-slick";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";

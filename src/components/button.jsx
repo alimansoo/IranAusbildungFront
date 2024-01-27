@@ -48,7 +48,7 @@ const buttonSizes = {
 function Button({
   type = 'button',
   size = 'medium',
-  style = 'primary',
+  styleVariant = 'primary',
   onClick = () => {
     return
   },
@@ -70,7 +70,7 @@ function Button({
           className={`inline-flex items-center justify-center relative rounded-md ${objectConvert(
             buttonSizes[size]
           )} ${
-            disabled ? ` !bg-gray-500` : objectConvert(buttonStyles[style])
+            disabled ? ` !bg-gray-500` : objectConvert(buttonStyles[styleVariant])
           } ${loading ? '!text-transparent' : ''} ${className}`}
           href={link}
           target={target}
@@ -91,7 +91,7 @@ function Button({
           )} ${
             disabled
               ? ` !bg-gray-400 !text-white`
-              : objectConvert(buttonStyles[style])
+              : objectConvert(buttonStyles[styleVariant])
           } ${loading ? '!text-transparent' : ''} ${className} ${iconOnly?`!px-0 w-[42px]`:``}`}
           type={type}
         >
