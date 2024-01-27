@@ -7,6 +7,7 @@ import Home from './pages/index';
 // import Blog from './pages/blog';
 // import SingleBlog from './pages/single_blog';
 import ContactUs from './pages/contact_us';
+import AboutUs from './pages/about_us';
 // import RequrieAuth from './features/requireAuth';
 // import Welcome from './features/Welcome';
 // import Layout from './components/layout';
@@ -29,7 +30,7 @@ const App = () => {
       <Route path="blog" element={<Blog />} />
       <Route path="single_blog" element={<SingleBlog />} /> */}
       <Route path="contact_us" element={<ContactUs />} />
-
+      <Route path="about_us" element={<AboutUs />} />
       {/* protected routes */}
       {/* <Route element={<RequrieAuth />}>
         <Route path='welcome' element={<Welcome/>} />

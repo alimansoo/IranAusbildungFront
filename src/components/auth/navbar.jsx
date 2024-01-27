@@ -17,7 +17,7 @@ function Navbar() {
               {title:'خدمات ما', link:''},
               {title: 'بلاگ آوسبیلدونگ', link:'/blog'},
               {title:'ارتباط با ما', link:'/contact_us'},
-              {title:'درباره ما', link:''}
+              {title:'درباره ما', link:'/about_us'}
             ]} />
           </div>
           <div className='flex gap-2'>
