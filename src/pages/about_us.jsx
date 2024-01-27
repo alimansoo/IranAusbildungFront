@@ -5,10 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from '../components/footer';
 import germany_go from '../images/germany_go.png'
-// import Button from '../components/button';
-import Social from '../components/social';
-// import FormInput from '../components/formInput';
-// import SelectInput from '../components/selectInput';
 
 function AboutUs() {
   return (
@@ -18,7 +14,7 @@ function AboutUs() {
         <div className='w-full bg-gray-50 flex-col justify-center py-14 pb-0 relative'>
           <div className='absolute bg-gray-200 top-0 right-0 left-0 h-96 '></div>
           <MainContainer className='inline-flex flex-col justify-center items-center z-10 relative pb-16'>
-            <div className='inline-flex flex-col rounded-md overflow-hidden text-center gap-5 pb-20'>
+            <div className='inline-flex flex-col rounded-md overflow-hidden text-center gap-5 pb-10'>
               <div className='text-3xl font-bold'><span className='text-primary-default'>درباره ما</span></div>
               <div className='text-sm text-gray-600'>درباره آوسبیلدونگ بیشتر بدانید</div>
             </div>
@@ -43,23 +39,23 @@ function AboutUs() {
                 <p className='text-primary-default pt-10'>افــــــــتـــــخــــارات مـــــــا</p>
               </div>
               <div className="w-full flex flex-row-reverse justify-between bg-gray-800 text-white p-10 rounded-b-2xl">
-                  <div className='flex flex-col gap-3'>
-                    <span className='text-[32px] font-bold'>۱۱۰۰ +</span>
-                    <span className='text-lg'>میانگین درآمد ماهانه</span>
-                  </div>
-                  <div className='flex flex-col gap-3'>
-                    <span className='text-[32px] font-bold'>۷۰۰ +</span>
-                    <span className='text-lg'>دانشجو فارغ التحصیل شده</span>
-                  </div>
-                  <div className='flex flex-col gap-3'>
-                    <span className='text-[32px] font-bold'>۴۰۰ +</span>
-                    <span className='text-lg'>رشته مختلف</span>
-                  </div>
-                  <div className='flex flex-col gap-3'>
-                    <span className='text-[32px] font-bold'>۵۰۰۰ +</span>
-                    <span className='text-lg'> دانشجویان فعال </span>
-                  </div>
+                <div className='flex flex-col gap-3'>
+                  <span className='text-[32px] font-bold'>۱۱۰۰ +</span>
+                  <span className='text-lg'>میانگین درآمد ماهانه</span>
                 </div>
+                <div className='flex flex-col gap-3'>
+                  <span className='text-[32px] font-bold'>۷۰۰ +</span>
+                  <span className='text-lg'>دانشجو فارغ التحصیل شده</span>
+                </div>
+                <div className='flex flex-col gap-3'>
+                  <span className='text-[32px] font-bold'>۴۰۰ +</span>
+                  <span className='text-lg'>رشته مختلف</span>
+                </div>
+                <div className='flex flex-col gap-3'>
+                  <span className='text-[32px] font-bold'>۵۰۰۰ +</span>
+                  <span className='text-lg'> دانشجویان فعال </span>
+                </div>
+              </div>
             </div>
           </MainContainer>
           <Footer/>
