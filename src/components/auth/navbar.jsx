@@ -2,7 +2,7 @@ import React from 'react';
 import userlogo from './../../icons/solar_user-bold-duotone.svg'
 import MainContainer from './../container';
 import Button from './../button';
-import NavbarGenerator from './navbarGenarator';
+import NavbarGenerator from './NavbarGenarator';
 import Search from './search';
 
 function Navbar() {
@@ -11,11 +11,20 @@ function Navbar() {
       <MainContainer className={"flex justify-between align-middle items-center"}>
         <>
           <div>
-            <NavbarGenerator items={['صفحه اصلی','لیست مشاغل','خدمات ما','بلاگ آوسبیلدونگ','ارتباط با ما','درباره ما']} />
+            <NavbarGenerator items={[
+              {title:'صفحه اصلی', link:'/'},
+              {title:'لیست مشاغل', link:'/jobsearch'},
+              {title:'خدمات ما', link:''},
+              {title: 'بلاگ آوسبیلدونگ', link:'/blog'},
+              {title:'ارتباط با ما', link:'/contact_us'},
+              {title:'درباره ما', link:'/about_us'}
+            ]} />
           </div>
           <div className='flex gap-2'>
             <Search />
-            <Button style='grey' iconOnly={true} ><img src={userlogo} /></Button>
+            <Button styleVariant='grey' className='!px-2' iconOnly={true} >
+              <img alt='' src={userlogo} />
+            </Button>
           </div>
         </>
       </MainContainer>
