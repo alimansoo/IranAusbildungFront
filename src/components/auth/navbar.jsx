@@ -4,6 +4,7 @@ import MainContainer from './../container';
 import Button from './../button';
 import NavbarGenerator from './NavbarGenarator';
 import Search from './search';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -22,9 +23,11 @@ function Navbar() {
           </div>
           <div className='flex gap-2'>
             <Search />
-            <Button styleVariant='grey' className='!px-2' iconOnly={true} >
-              <img alt='' src={userlogo} />
-            </Button>
+            <Link to={'/login'}>
+              <Button styleVariant='grey' className='!px-2' iconOnly={true} >
+                <img alt='' src={userlogo} />
+              </Button>
+            </Link>
           </div>
         </>
       </MainContainer>
