@@ -19,7 +19,6 @@ const buttonStyles = {
   yellow: {
     background: 'bg-yellow-default',
     color: 'text-gray-600',
-    fontWeight: 'font-bold',
   },
   textonly: {
     background: 'bg-transparent hover:bg-gray-100',

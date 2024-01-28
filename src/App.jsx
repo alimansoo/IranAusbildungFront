@@ -2,7 +2,7 @@ import React from 'react';
 import Home from './pages/index';
 import JobSearch from './pages/job_search';
 import Ausbildung from './pages/ausbildung';
-// import Comparison from './pages/comparison';
+import ComparisonAusbildung from './pages/comparison';
 import CoverLetter from './pages/cover_letter';
 import Blog from './pages/blog';
 import SingleBlog from './pages/single_blog';
@@ -23,12 +23,11 @@ const App = () => {
   return (
     <Routes>
       {/* public routes */}
-      {/* <Route path='/' element={<Layout />}></Route> */}
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="jobsearch" element={<JobSearch />} />
       <Route path="ausbildung" element={<Ausbildung />} />
-      {/* <Route path="comparison" element={<Comparison />} />*/}
+      <Route path="compar_ausbildung" element={<ComparisonAusbildung />} />
       <Route path="cover_letter" element={<CoverLetter />} /> 
       <Route path="blog" element={<Blog />} />
       <Route path="single_blog" element={<SingleBlog />} />
