@@ -3,7 +3,7 @@ import Home from './pages/index';
 // import About from './pages/job_search';
 // import Ausbildung from './pages/ausbildung';
 // import Comparison from './pages/comparison';
-// import CoverLetter from './pages/cover_letter';
+import CoverLetter from './pages/cover_letter';
 import Blog from './pages/blog';
 import SingleBlog from './pages/single_blog';
 import ContactUs from './pages/contact_us';
@@ -28,8 +28,8 @@ const App = () => {
       <Route path="/home" element={<Home />} />
       {/* <Route path="jobsearch" element={<About />} />
       <Route path="ausbildung" element={<Ausbildung />} />
-      <Route path="comparison" element={<Comparison />} />
-      <Route path="cover_letter" element={<CoverLetter />} /> */}
+      <Route path="comparison" element={<Comparison />} />*/}
+      <Route path="cover_letter" element={<CoverLetter />} /> 
       <Route path="blog" element={<Blog />} />
       <Route path="single_blog" element={<SingleBlog />} />
       <Route path="contact_us" element={<ContactUs />} />
