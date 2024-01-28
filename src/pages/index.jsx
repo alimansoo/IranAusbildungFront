@@ -54,7 +54,7 @@ function Index() {
           <span className='text-gray-400'>انتخابی هوشمندانه برای آینده</span>
           <img src={mdi_flight} alt=''/>
         </div>
-        <div  className='w-full text-center text-5xl font-bold mb-20'>آیــــــنده تـــــو ، از <span className='text-primary-default'>هـــمیــــن حــــــالا</span> شــروع میــــشه!</div>
+        <div  className='w-full text-center text-6xl font-bold mb-20'>آیــنده تـــو ، از <span className='text-primary-default'>هـمیــن حـــالا</span> شــروع میــــشه!</div>
         <div className='bg-gray-100 w-2/4 max-w-[900px] py-[26px] px-[42px] rounded-md mb-20'>
           <div className='flex flex-row w-full rounded-md overflow-hidden'>
             <input placeholder='نام رشته مورد نظرت رو جست و جو کن ...' className='w-full outline-none p-3 text-[14px]' />
