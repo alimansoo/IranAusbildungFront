@@ -1,6 +1,5 @@
-import React from 'react'
-import { objectConvert } from '../util/functions'
-// import PropTypes from 'prop-types';
+import React from 'react';
+import { objectConvert } from '../util/functions';
 
 const buttonStyles = {
   primary: {
@@ -22,27 +21,37 @@ const buttonStyles = {
     color: 'text-gray-600',
     fontWeight: 'font-bold',
   },
+  textonly: {
+    background: 'bg-transparent hover:bg-gray-100',
+    color: 'text-gray-700'
+  }
 }
 
 const buttonSizes = {
   small: {
     height: 'h-[36px]',
-    padding: 'px-4',
-    fontSize: 'text-label-sm',
+    padding: 'px-3',
+    fontSize: 'text-sm',
     gap: 'gap-1',
   },
   medium: {
     height: 'h-[42px]',
     padding: 'px-5',
-    fontSize: 'text-body-base',
+    fontSize: 'text-base',
     gap: 'gap-2',
   },
   large: {
     height: 'h-[50px]',
     padding: 'px-7',
-    fontSize: 'text-label-lg',
+    fontSize: 'text-lg',
     gap: 'gap-2',
   },
+}
+
+const iconSizes = {
+  small: 'w-[20px] h-[20px]',
+  medium: 'w-[24px] h-[24px]',
+  large: 'w-[28px] h-[28px]',
 }
 
 function Button({
@@ -67,7 +76,7 @@ function Button({
       {iconOnly ? '':''}
       {type === 'link' ? (
         <a
-          className={`inline-flex items-center justify-center relative rounded-md ${objectConvert(
+          className={`inline-flex items-center justify-center relative rounded-lg ${objectConvert(
             buttonSizes[size]
           )} ${
             disabled ? ` !bg-gray-500` : objectConvert(buttonStyles[styleVariant])
@@ -86,7 +95,7 @@ function Button({
         <button
           onClick={onClick}
           disabled={disabled}
-          className={`inline-flex items-center justify-center relative rounded-md ${objectConvert(
+          className={`inline-flex items-center justify-center relative rounded-md w-max ${objectConvert(
             buttonSizes[size]
           )} ${
             disabled
@@ -100,6 +109,7 @@ function Button({
             rightIcon={rightIcon}
             leftIcon={leftIcon}
             loading={loading}
+            size={size}
           />
         </button>
       )}
@@ -107,18 +117,18 @@ function Button({
   )
 }
 
-function ContentBtn({ children, rightIcon, leftIcon, loading }) {
+function ContentBtn({ children, rightIcon, leftIcon, loading, size }) {
   return (
     <>
       {loading !== undefined && loading ? (
         <div className="absolute top-0 left-0 right-0 bottom-0 flex items-center">
-          Loading...
+          loading ...
         </div>
       ) : (
         ''
       )}
       {leftIcon ? (
-        <div className="flex w-[16px] h-[16px] items-center content-center">
+        <div className={`flex ${iconSizes[size]} items-center content-center`}>
           {leftIcon}
         </div>
       ) : (
@@ -126,7 +136,7 @@ function ContentBtn({ children, rightIcon, leftIcon, loading }) {
       )}
       {children}
       {rightIcon ? (
-        <div className="flex w-[16px] h-[16px] items-center content-center">
+        <div className={`flex ${iconSizes[size]} items-center content-center`}>
           {rightIcon}
         </div>
       ) : (
