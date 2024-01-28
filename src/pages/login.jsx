@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const login = () => {
   return (
     <div className='bg-gray-800 text-white h-[100vh] w-[100vw] flex flex-col gap-8 items-center justify-center'>
-      <img src={LargeLogo} alt='' />
+      <Link to={'/'}><img src={LargeLogo} alt='' /></Link>
       <div className='bg-white flex flex-col gap-4 w-[420px] rounded-xl p-8 text-gray-700'>
         <div className='inline-flex items-center gap-2'>
           <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">

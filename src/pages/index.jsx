@@ -54,14 +54,14 @@ function Index() {
           <span className='text-gray-400'>انتخابی هوشمندانه برای آینده</span>
           <img src={mdi_flight} alt=''/>
         </div>
-        <div  className='w-full text-center text-5xl font-bold mb-10'>آیــــــنده تـــــو ، از <span className='text-primary-default'>هـــمیــــن حــــــالا</span> شــروع میــــشه!</div>
-        <div className='bg-gray-100 w-2/4 max-w-[900px] py-[26px] px-[42px] rounded-md mb-12'>
+        <div  className='w-full text-center text-5xl font-bold mb-20'>آیــــــنده تـــــو ، از <span className='text-primary-default'>هـــمیــــن حــــــالا</span> شــروع میــــشه!</div>
+        <div className='bg-gray-100 w-2/4 max-w-[900px] py-[26px] px-[42px] rounded-md mb-20'>
           <div className='flex flex-row w-full rounded-md overflow-hidden'>
-            <input placeholder='نام رشته مورد نظرت رو جست و جو کن ...' className='w-full outline-none p-3 text-[16px]' />
-            <button className='bg-primary-default inline-flex gap-2 justify-center text-white p-3 px-6 pl-7 text-[16px]'><img src={search} alt='' /><span>جستوجو</span></button>
+            <input placeholder='نام رشته مورد نظرت رو جست و جو کن ...' className='w-full outline-none p-3 text-[14px]' />
+            <button className='bg-primary-default inline-flex gap-2 items-center justify-center text-white p-3 px-6 pl-7 text-[14px]'><img src={search} alt='' /><span>جستوجو</span></button>
           </div>
         </div>
-        <div className='inline-flex gap-6 mb-12'>
+        <div className='inline-flex gap-6 mb-20'>
           <Button styleVariant='secondary' className='bg-transparent text-gray-700'>شرایط پذیرش پرونده و مهاجرت</Button>
           <Button styleVariant='secondary' className='bg-transparent text-gray-700'>درخواست مشاوره</Button>
           <Button styleVariant='secondary' className='bg-transparent text-gray-700'>نگارش  رزومه و انگیزه نامه</Button>
