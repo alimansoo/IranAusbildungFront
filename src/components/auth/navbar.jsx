@@ -15,7 +15,15 @@ function Navbar() {
             <NavbarGenerator items={[
               {title:'صفحه اصلی', link:'/'},
               {title:'لیست مشاغل', link:'/jobsearch'},
-              {title:'خدمات ما', link:''},
+              {title:'خدمات ما', link:'',
+                subs : [
+                  {title:'پذیرش پرونده', link:'/'},
+                  {title:'نگارش رزومه و انگیزه نامه', link:'/'},
+                  {title:'بررسی رزومه و انگیزه نامه', link:'/'},
+                  {title:'مقایسه نمره', link:'/'},
+                  {title:'مقایسه آوسبیلدونگ ها', link:'/'},
+                ]
+              },
               {title: 'بلاگ آوسبیلدونگ', link:'/blog'},
               {title:'ارتباط با ما', link:'/contact_us'},
               {title:'درباره ما', link:'/about_us'}

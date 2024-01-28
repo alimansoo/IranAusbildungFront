@@ -49,8 +49,8 @@ function Index() {
   return (
     <div className="text-primary">
       <Auth />
-      <div className='w-full flex flex-col items-center text-center pt-12'>
-        <div className='flex flex-row gap-2 w-max mb-5'>
+      <div className='w-full flex flex-col items-center text-center pt-16'>
+        <div className='flex flex-row gap-2 w-max mb-12'>
           <span className='text-gray-400'>انتخابی هوشمندانه برای آینده</span>
           <img src={mdi_flight} alt=''/>
         </div>
