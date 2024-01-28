@@ -21,7 +21,7 @@ function Navbar() {
                   {title:'نگارش رزومه و انگیزه نامه', link:'/cover_letter'},
                   {title:'بررسی رزومه و انگیزه نامه', link:'/'},
                   {title:'مقایسه نمره', link:'/'},
-                  {title:'مقایسه آوسبیلدونگ ها', link:'/'},
+                  {title:'مقایسه آوسبیلدونگ ها', link:'/compar_ausbildung'},
                 ]
               },
               {title: 'بلاگ آوسبیلدونگ', link:'/blog'},

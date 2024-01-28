@@ -3,6 +3,7 @@ import largelogo from './../../large-logo.svg'
 import ph_chat from '../../icons/ph_chat.svg'
 import MainContainer from './../container';
 import Button from '../button';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -10,7 +11,9 @@ function Header() {
       <MainContainer className={"flex justify-between align-middle items-center"}>
         <>
           <div>
-            <img src={largelogo} alt='' className='h-[40px]' />
+            <Link to={'/'}>
+              <img src={largelogo} alt='' className='h-[40px]' />
+            </Link>
           </div>
           <div className='flex gap-4'>
             <Button 
