@@ -20,8 +20,8 @@ function AboutUs() {
             </div>
             <div className='w-[80%] flex flex-col items-center justify-center gap-my-10  shadow-lg'>
               <div className="flex flex-col items-center justify-center gap-8 bg-white p-10 rounded-t-2xl">
-                <div className='w-full flex flex-row justify-between gap-10'>
-                  <div className="flex flex-col gap-4 w-[55%]">
+                <div className='w-full flex flex-row justify-between gap-14'>
+                  <div className="flex flex-col gap-4 w-[56%]">
                     <div className='inline-flex items-center gap-3'>
                       <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                         <path d="M17.4453 1.09375C10.2812 1.09375 4.21094 5.6875 1.96875 12.0312H32.9219C30.6797 5.6875 24.6094 1.09375 17.4453 1.09375Z" fill="#3E4347"/>
@@ -30,30 +30,30 @@ function AboutUs() {
                       </svg>
                       <h6 className='text-primary-default text-lg'>ایران آوسبیلدونگ</h6>
                     </div>
-                    <p className='text-gray-600 w-full text-right leading-10'>در سال ۹۹ در پی ابهامات بسیاری که درمورد امکان مهاجرت به آلمان از طریق ویزای آوسبیلدونگ وجود داشت، مجموعه ایران آوسبیلدونگ به عنوان اولین مرجع حرفه‌ای فارسی زبان در زمینه آوسبیلدونگ تاسیس گردید تا با ارائه خدمات متنوع و با کمترین هزینه از مشاوره در حوزه‌های مختلف و نگارش حرفه‌ای رزومه و انگیزه‌نامه تا پذیرش پرونده‌های مهاجرتی در رشته‌های گوناگون بتواند متقاضیان ویزای آوسبیلدونگ را همواره یاری نموده و آن‌ها را در جریان جدیدترین و دقیقترین اطلاعات مرتبط با این  نوع از مهاجرت قرار دهد</p>
+                    <p className='text-gray-600 w-full text-right leading-8 text-[14px]'>در سال ۹۹ در پی ابهامات بسیاری که درمورد امکان مهاجرت به آلمان از طریق ویزای آوسبیلدونگ وجود داشت، مجموعه ایران آوسبیلدونگ به عنوان اولین مرجع حرفه‌ای فارسی زبان در زمینه آوسبیلدونگ تاسیس گردید تا با ارائه خدمات متنوع و با کمترین هزینه از مشاوره در حوزه‌های مختلف و نگارش حرفه‌ای رزومه و انگیزه‌نامه تا پذیرش پرونده‌های مهاجرتی در رشته‌های گوناگون بتواند متقاضیان ویزای آوسبیلدونگ را همواره یاری نموده و آن‌ها را در جریان جدیدترین و دقیقترین اطلاعات مرتبط با این  نوع از مهاجرت قرار دهد</p>
                   </div>
-                  <div className="flex w-[45%]">
-                    <img src={germany_go} alt='' className='w-full pr-20' />
+                  <div className="flex w-[44%]">
+                    <img src={germany_go} alt='' className='w-full  h-max' />
                   </div>
                 </div>
-                <p className='text-primary-default pt-10'>افــــــــتـــــخــــارات مـــــــا</p>
+                <p className='text-primary-default pt-6 font-bold'>افــــــــتـــــخــــارات مـــــــا</p>
               </div>
-              <div className="w-full flex flex-row-reverse justify-between bg-gray-800 text-white p-10 rounded-b-2xl">
+              <div className="w-full flex flex-row-reverse justify-between bg-gray-900 text-white p-10 px-24 rounded-b-2xl">
                 <div className='flex flex-col gap-3'>
-                  <span className='text-[32px] font-bold'>۱۱۰۰ +</span>
-                  <span className='text-lg'>میانگین درآمد ماهانه</span>
+                  <span className='text-[38px] font-bold'>۱۱۰۰ +</span>
+                  <span className='text-lg font-extralight'>میانگین درآمد ماهانه</span>
                 </div>
                 <div className='flex flex-col gap-3'>
-                  <span className='text-[32px] font-bold'>۷۰۰ +</span>
-                  <span className='text-lg'>دانشجو فارغ التحصیل شده</span>
+                  <span className='text-[38px] font-bold'>۷۰۰ +</span>
+                  <span className='text-lg font-extralight'>دانشجو فارغ التحصیل شده</span>
                 </div>
                 <div className='flex flex-col gap-3'>
-                  <span className='text-[32px] font-bold'>۴۰۰ +</span>
-                  <span className='text-lg'>رشته مختلف</span>
+                  <span className='text-[38px] font-bold'>۴۰۰ +</span>
+                  <span className='text-lg font-extralight'>رشته مختلف</span>
                 </div>
                 <div className='flex flex-col gap-3'>
-                  <span className='text-[32px] font-bold'>۵۰۰۰ +</span>
-                  <span className='text-lg'> دانشجویان فعال </span>
+                  <span className='text-[38px] font-bold'>۵۰۰۰ +</span>
+                  <span className='text-lg font-extralight'> دانشجویان فعال </span>
                 </div>
               </div>
             </div>

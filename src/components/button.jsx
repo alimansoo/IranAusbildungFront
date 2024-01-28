@@ -10,7 +10,7 @@ const buttonStyles = {
   secondary: {
     border: 'border-[1px] border-primary-default',
     color: 'text-gray-700',
-    background: 'bg-transparent',
+    background: 'bg-transparent hover:bg-primary-0',
   },
   grey: {
     border: '',

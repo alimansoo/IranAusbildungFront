@@ -6,13 +6,13 @@ import Button from '../button';
 
 function Header() {
   return (
-    <div className="text-primary-default bg-dark py-3">
+    <div className="text-primary-default bg-dark py-4">
       <MainContainer className={"flex justify-between align-middle items-center"}>
         <>
           <div>
             <img src={largelogo} alt='' className='h-[40px]' />
           </div>
-          <div className='flex gap-2'>
+          <div className='flex gap-4'>
             <Button styleVariant='secondary' className='!border-0 text-white !bg-gray-700 !font-extralight'>
               پذیرش پرونده
             </Button>
