@@ -22,7 +22,7 @@ function Comparison() {
               <div className='text-sm text-gray-600'>لطفا فرم های زیر را پر کنید</div>
             </div>
             <div className='w-full flex flex-row items-stretch gap-7 my-10 bg-white rounded-2xl shadow-lg p-10'>
-              <div className='flex flex-col justify-between w-1/2 h-full pl-16'>
+              <div className='flex flex-col justify-between w-1/2 h-full pl-16 gap-36'>
                 <div className='w-full inline-flex flex-col gap-10 '>
                   <div className='w-full inline-flex gap-8'>
                     <FormInput label={'نام و نام خانوادگی'} placeholder={'نام را وارد کنید'} />
@@ -66,10 +66,10 @@ function Comparison() {
                     اما انگیزه‌نامه‌نویسی با رزومه‌نویسی متفاوت و چالش‌برانگیزتر است. چون علاوه بر قواعد و الگوهای کلی، سایر اجزای آن متغیر هستند و باید با توجه به هر فرد و هر کارفرما/دانشگاه، تغییراتی در آن ایجاد شود. متن انگیزه‌نامه باید مختصر و مفید باشد و نکات برجسته رزومه‌ی فرد را به شکلی هنرمندانه، جذاب و متقاعد‌کننده تشریح کند. کارشناسان ایران آوسبیلدونگ با تجربه بالایی که در این زمینه دارند، می‌توانند مسئولیت نگارش رزومه و انگیزه‌نامه استاندارد را برای فرد بر عهده بگیرند.
                   </p>
                 </div>
-                <div className='w-full text-right pt-4'>
+                <div className='w-full text-right pt-8'>
                   <h6 className='font-bold'>روند نگارش:</h6>
                 </div>
-                <div className='w-full inline-flex justify-between gap-6 pt-8'>
+                <div className='w-full inline-flex justify-between gap-6 pt-6'>
                   <div className='bg-gray-100 relative flex flex-col px-4 rounded-lg py-4 w-full pt-9'>
                     <span className='text-primary-default text-3xl font-bold absolute left-1/2 -top-4 -translate-x-1/2'>۰۱</span>
                     <span className='text-[14px] leading-7'>از آن جا که انگیزه نامه و رزومه شرح فعالیت های شماست، مرحله به مرحله با شما در ارتباط خواهیم بود تا اطلاعاتی دقيق از شما دریافت کنیم</span>
