@@ -4,8 +4,8 @@ import Home from './pages/index';
 // import Ausbildung from './pages/ausbildung';
 // import Comparison from './pages/comparison';
 // import CoverLetter from './pages/cover_letter';
-// import Blog from './pages/blog';
-// import SingleBlog from './pages/single_blog';
+import Blog from './pages/blog';
+import SingleBlog from './pages/single_blog';
 import ContactUs from './pages/contact_us';
 import AboutUs from './pages/about_us';
 import FAQ from './pages/faq';
@@ -29,9 +29,9 @@ const App = () => {
       {/* <Route path="jobsearch" element={<About />} />
       <Route path="ausbildung" element={<Ausbildung />} />
       <Route path="comparison" element={<Comparison />} />
-      <Route path="cover_letter" element={<CoverLetter />} />
+      <Route path="cover_letter" element={<CoverLetter />} /> */}
       <Route path="blog" element={<Blog />} />
-      <Route path="single_blog" element={<SingleBlog />} /> */}
+      <Route path="single_blog" element={<SingleBlog />} />
       <Route path="contact_us" element={<ContactUs />} />
       <Route path="about_us" element={<AboutUs />} />
       <Route path="faq" element={<FAQ />} />
