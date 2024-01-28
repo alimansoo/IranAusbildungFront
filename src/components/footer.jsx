@@ -45,11 +45,11 @@ function Footer() {
                 <div className='inline-flex flex-col gap-7 text-white text-right w-2/6'>
                     <h6 className='text-primary-default text-md font-bold'>نماد های اعتبار ما</h6>
                     <div className='inline-flex gap-3'>
-                    <img src={enamad} alt='' className='bg-gray-800 rounded-lg ' />
-                    <img src={zarinpal} alt='' className='w-[92px]' />
-                    <div className='inline-flex flex-col gap-3'>
-                        <span className='bg-gray-800 px-4 py-4 rounded-lg'>نماد وزارت گردشگری</span>
-                        <span className='bg-gray-800 px-4 py-4 rounded-lg'>نماد وزارت علوم کشور</span>
+                    <img src={enamad} alt='' className='bg-gray-800 rounded-lg w-[96px] h-full' />
+                    <img src={zarinpal} alt='' className='w-[130px] h-full'/>
+                    <div className='inline-flex flex-col gap-3 w-full'>
+                        <span className='w-full text-center bg-gray-800 px-4 py-4 rounded-lg text-[14px]'>نماد وزارت گردشگری</span>
+                        <span className='w-full text-center bg-gray-800 px-4 py-4 rounded-lg text-[14px]'>نماد وزارت علوم کشور</span>
                     </div>
                     </div>
                     <h6 className='text-primary-default text-md font-bold'>عضویت در خبرنامه</h6>
