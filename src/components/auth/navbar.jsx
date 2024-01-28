@@ -18,7 +18,7 @@ function Navbar() {
               {title:'خدمات ما', link:'',
                 subs : [
                   {title:'پذیرش پرونده', link:'/'},
-                  {title:'نگارش رزومه و انگیزه نامه', link:'/'},
+                  {title:'نگارش رزومه و انگیزه نامه', link:'/cover_letter'},
                   {title:'بررسی رزومه و انگیزه نامه', link:'/'},
                   {title:'مقایسه نمره', link:'/'},
                   {title:'مقایسه آوسبیلدونگ ها', link:'/'},
