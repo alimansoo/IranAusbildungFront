@@ -6,6 +6,74 @@ import Button from '../button';
 import { Link } from 'react-router-dom';
 
 function Header() {
+
+  const mohshaverMenu = [
+    {
+      title : 'مشاوره آوسبیلدونگ ',
+      icon: 
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M17.1332 3.2585C17.6249 3.75016 17.6249 4.54183 17.1332 5.02516L13.8915 8.26683L15.6582 15.9252L14.4832 17.1085L11.2499 10.9168L7.99987 14.1668L8.29987 16.2252L7.4082 17.1085L5.94154 14.4585L3.2832 12.9835L4.16654 12.0835L6.24987 12.3918L9.47487 9.16683L3.2832 5.9085L4.46654 4.7335L12.1249 6.50016L15.3665 3.2585C15.8332 2.77516 16.6665 2.77516 17.1332 3.2585Z" fill="#EC3A4C"/>
+      </svg>,
+      link : '/'
+    },
+    {
+      title : 'مشاوره تحصیلی',
+      icon: 
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M10.0007 2.5L0.833984 7.5L4.16732 9.31667V14.3167L10.0007 17.5L15.834 14.3167V9.31667L17.5006 8.40833V14.1667H19.1673V7.5L10.0007 2.5ZM15.684 7.5L10.0007 10.6L4.31732 7.5L10.0007 4.4L15.684 7.5ZM14.1673 13.3333L10.0007 15.6L5.83398 13.3333V10.225L10.0007 12.5L14.1673 10.225V13.3333Z" fill="#EC3A4C"/>
+      </svg>,
+      link : '/'
+    },
+    {
+      title : 'مشاوره کاری ',
+      icon: 
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M3.33268 17.4998C2.87435 17.4998 2.48185 17.3365 2.15518 17.0098C1.82852 16.6832 1.66546 16.2909 1.66602 15.8332V6.66651C1.66602 6.20817 1.82935 5.81567 2.15602 5.48901C2.48268 5.16234 2.87491 4.99928 3.33268 4.99984H6.66602V3.33317C6.66602 2.87484 6.82935 2.48234 7.15602 2.15567C7.48268 1.82901 7.87491 1.66595 8.33268 1.66651H11.666C12.1244 1.66651 12.5169 1.82984 12.8435 2.15651C13.1702 2.48317 13.3332 2.87539 13.3327 3.33317V4.99984H16.666C17.1244 4.99984 17.5169 5.16317 17.8435 5.48984C18.1702 5.81651 18.3332 6.20873 18.3327 6.66651V15.8332C18.3327 16.2915 18.1694 16.684 17.8427 17.0107C17.516 17.3373 17.1238 17.5004 16.666 17.4998H3.33268ZM3.33268 15.8332H16.666V6.66651H3.33268V15.8332ZM8.33268 4.99984H11.666V3.33317H8.33268V4.99984Z" fill="#EC3A4C"/>
+      </svg>,
+      link : '/'
+    },
+    {
+      title : 'مشاوره آمادگی آزمون زبان',
+      icon: 
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <g clip-path="url(#clip0_782_304)">
+          <path d="M16.6669 1.6665H7.778V4.44428H8.88911V2.77762H16.6669C17.0002 2.77762 17.2224 2.99984 17.2224 3.33317V9.44428C17.2224 9.77762 17.0002 9.99984 16.6669 9.99984H9.44466V13.8887H6.50022L4.44466 15.4998V13.8887H2.77799C2.44466 13.8887 2.22244 13.6665 2.22244 13.3332V7.22206C2.22244 6.88873 2.44466 6.6665 2.77799 6.6665H10.0002V5.55539H2.77799C1.83355 5.55539 1.11133 6.27762 1.11133 7.22206V13.3332C1.11133 14.2776 1.83355 14.9998 2.77799 14.9998H3.33355V17.8332L6.83355 14.9998H10.5558V11.1109H16.6669C17.6113 11.1109 18.3336 10.3887 18.3336 9.44428V3.33317C18.3336 2.38873 17.6113 1.6665 16.6669 1.6665Z" fill="#EC3A4C"/>
+          <path d="M3.44531 12.7223H4.77865L5.11198 11.8334H6.8342L7.16753 12.7223H8.50087L6.61198 7.77783H5.27865L3.44531 12.7223ZM5.94531 9.16672L6.50087 10.8889H5.38976L5.94531 9.16672Z" fill="#EC3A4C"/>
+          <path d="M11.1113 9.44461C11.7224 9.44461 12.5558 9.27794 13.3336 8.88905C14.1113 9.27794 15.0002 9.44461 15.5558 9.44461V8.3335C15.5558 8.3335 15.0002 8.3335 14.3891 8.11127C15.0558 7.44461 15.5558 6.44461 15.5558 5.00016V4.44461H13.8891V3.3335H12.778V4.44461H11.1113V5.55572H14.3891C14.278 6.55572 13.8336 7.16683 13.3336 7.55572C13.0002 7.27794 12.6669 6.88905 12.4447 6.38905H11.278C11.5002 7.11127 11.8336 7.66683 12.278 8.11127C11.7224 8.3335 11.2224 8.3335 11.1113 8.3335V9.44461Z" fill="#EC3A4C"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_782_304">
+            <rect width="20" height="20" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>,
+      link : '/'
+    },
+    {
+      title : 'مشاوره نظام وظیفه',
+      icon: 
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <mask id="mask0_782_326" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+          <path d="M0 0H20V20H0V0Z" fill="white"/>
+        </mask>
+        <g mask="url(#mask0_782_326)">
+          <path d="M8.43663 10.6387C7.69301 10.6387 6.97985 10.3433 6.45403 9.81746C5.92821 9.29165 5.63281 8.57848 5.63281 7.83487V5.29492H11.2404V7.83484C11.2404 8.20305 11.1679 8.56765 11.027 8.90782C10.8861 9.248 10.6796 9.55709 10.4192 9.81745C10.1589 10.0778 9.84978 10.2843 9.50961 10.4253C9.16943 10.5662 8.80483 10.6387 8.43663 10.6387Z" stroke="#EC3A4C" stroke-width="1.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M7.28125 10.4058V11.9581C7.28266 12.2634 7.40492 12.5557 7.62128 12.7711C7.83764 12.9864 8.13049 13.1073 8.43576 13.1073C8.74103 13.1073 9.03388 12.9864 9.25024 12.7711C9.4666 12.5557 9.58886 12.2634 9.59027 11.9581V10.4058" stroke="#EC3A4C" stroke-width="1.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M8.43706 1.6665C7.47473 1.66651 6.55182 2.0488 5.87135 2.72926C5.19089 3.40973 4.8086 4.33264 4.80859 5.29497H12.0655C12.0655 4.33264 11.6832 3.40973 11.0028 2.72926C10.3223 2.0488 9.39938 1.66651 8.43706 1.6665Z" stroke="#EC3A4C" stroke-width="1.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M4.14844 5.29492H12.7248" stroke="#EC3A4C" stroke-width="1.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M8.4375 17.5659V13.1128" stroke="#EC3A4C" stroke-width="1.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M4.80859 15.5864H6.12803" stroke="#EC3A4C" stroke-width="1.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M18.332 4.72719L16.4722 4.05029L13.9902 10.8696L15.8501 11.5465L18.332 4.72719Z" stroke="#EC3A4C" stroke-width="1.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M15.543 3.71143L16.4729 4.04989" stroke="#EC3A4C" stroke-width="1.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13.3145 12.7295L15.7942 13.632" stroke="#EC3A4C" stroke-width="1.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16.2461 12.3921C16.3059 12.2277 16.298 12.0462 16.2241 11.8877C16.1501 11.7291 16.0162 11.6064 15.8518 11.5465L13.992 10.8696L11.5547 17.566H14.363L16.2461 12.3921Z" stroke="#EC3A4C" stroke-width="1.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M7.28299 11.958H5.79861C5.36543 11.958 4.93649 12.0433 4.53628 12.2091C4.13607 12.3749 3.77244 12.6178 3.46613 12.9241C3.15983 13.2304 2.91685 13.5941 2.75108 13.9943C2.58532 14.3945 2.5 14.8234 2.5 15.2566V17.5656H11.5542" stroke="#EC3A4C" stroke-width="1.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13.2844 12.8113C12.6801 12.262 11.8928 11.9578 11.0762 11.958H9.5918" stroke="#EC3A4C" stroke-width="1.1" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+      </svg>,
+      link : '/'
+    },
+  ]
   
 
   return (
@@ -31,13 +99,29 @@ function Header() {
             </Button>
             <Button 
               styleVariant='primary'  
-              className=' !text-[13px]' 
+              className=' !text-[13px] group' 
               leftIcon={<img src={ph_chat} className='w-[20px]' alt=''/>}>
-              درخواست مشاوره  
+              درخواست مشاوره
+              <div className='hidden absolute left-1/2 -translate-x-1/2 top-[100%] group-hover:block z-50'>
+                <ul className='flex flex-col items-start duration-1000 ease-in-out bg-white  border border-gray-200 rounded-xl w-max px-4 py-1 '>
+                  {
+                    mohshaverMenu.map((value) => {
+                      return (
+                        <li className='w-full inline-flex flex-row hover:text-primary-default items-center gap-2 border-b last:border-b-0 border-gray-100 py-3 text-[14px] text-black'>
+                          <Link className='w-full flex flex-row items-center gap-2 justify-start' to={value.link}>
+                            {value.icon}
+                            <p>{value.title}</p>
+                          </Link>
+                        </li>
+                      )
+                    })
+                  }
+                </ul>
+              </div>
+              
             </Button>
+            
           </div>
-          
-          {/* <LoginModal/> */}
         </>
       </MainContainer>
     </div>
