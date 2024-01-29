@@ -3,30 +3,40 @@ import cardimage from '../images/ALINOUR.png'
 import mingcute_left from '../icons/mingcute_left.svg'
 import { Link } from "react-router-dom";
 
-function Card({className}) {
+function Card(
+    {
+      className,
+      isSmall,
+    }
+  ) {
   return (
-    <Link to={'/ausbildung'} className={`flex min-w-[270px] flex-col gap-3 bg-white border border-gray-200 p-3 relative rounded-lg ${className}`}>
-      <img src={cardimage} alt="" className="rounded"/>
+    <Link to={'/ausbildung'} className={`flex min-w-[270px] justify-center items-center flex-col gap-3 bg-white border border-gray-200 p-3 relative rounded-lg ${className}`}>
+      <img src={cardimage} alt="" className="rounded w-full"/>
       <div className="">پیرا پزشکی</div>
       <div className="text-primary-default">Gesundheitswesen</div>
-      <div className="flex flex-col gap-4 px-3 pb-3">
-        <div className="w-full inline-flex justify-between bg-gray-100 text-sm py-3 px-3 rounded-md">
-          <span>حقوق سال اول:</span>
-          <span>۳۰۰ - ۶۱۹</span>
-        </div>
-        <div className="w-full inline-flex justify-between bg-gray-100 text-sm py-3 px-3 rounded-md">
-          <span>حقوق سال اول:</span>
-          <span>۳۰۰ - ۶۱۹</span>
-        </div>
-        <div className="w-full inline-flex justify-between bg-gray-100 text-sm py-3 px-3 rounded-md">
-          <span>حقوق سال اول:</span>
-          <span>۳۰۰ - ۶۱۹</span>
-        </div>
-        <div className="w-full inline-flex justify-center gap-3 bg-primary-0 text-primary-default py-3 px-2 rounded-md">
-          <span>مشاهده اطلاعات بیشتر</span>
-          <span><img src={mingcute_left} alt=""/></span>
-        </div>
+      {
+        !isSmall ? 
+        <div className="w-full flex flex-col gap-4 px-3 pb-3">
+          <div className="w-full inline-flex justify-between bg-gray-100 text-sm py-3 px-3 rounded-md">
+            <span>حقوق سال اول:</span>
+            <span>۳۰۰ - ۶۱۹</span>
+          </div>
+          <div className="w-full inline-flex justify-between bg-gray-100 text-sm py-3 px-3 rounded-md">
+            <span>حقوق سال اول:</span>
+            <span>۳۰۰ - ۶۱۹</span>
+          </div>
+          <div className="w-full inline-flex justify-between bg-gray-100 text-sm py-3 px-3 rounded-md">
+            <span>حقوق سال اول:</span>
+            <span>۳۰۰ - ۶۱۹</span>
+          </div>
+          
+        </div> : ''
+      }
+      <div className="w-full inline-flex justify-center gap-3 bg-primary-0 hover:bg-primary-default hover:text-white text-primary-default py-3 px-2 rounded-md">
+        <span>مشاهده اطلاعات بیشتر</span>
+        <span><img src={mingcute_left} alt=""/></span>
       </div>
+      
       <div className="inline-flex absolute top-5 right-5 gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
           <rect width="28" height="28" rx="5" fill="white" fill-opacity="0.8"/>

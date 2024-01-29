@@ -4,7 +4,6 @@ import MainContainer from './../container';
 import Button from './../button';
 import NavbarGenerator from './NavbarGenarator';
 import Search from './search';
-import { Link } from 'react-router-dom';
 import LoginModal from '../../pages/login_modal';
 
 function Navbar() {
