@@ -11,12 +11,15 @@ import AboutUs from './pages/about_us';
 import FAQ from './pages/faq';
 import Login from './pages/login';
 import Register from './pages/register';
+import Dashboard from '../src/pages/dashboard/home'
+import NotFound from './pages/NotFound';
 // import RequrieAuth from './features/requireAuth';
 // import Welcome from './features/Welcome';
 // import Layout from './components/layout';
 import {
   Routes,
-  Route
+  Route,
+  Switch
 } from "react-router-dom";
 
 const App = () => {
@@ -36,10 +39,12 @@ const App = () => {
       <Route path="faq" element={<FAQ />} />
       <Route path="login" element={<Login />} />
       <Route path="register" element={<Register />} />
+
       {/* protected routes */}
-      {/* <Route element={<RequrieAuth />}>
-        <Route path='welcome' element={<Welcome/>} />
-      </Route> */}
+      <Route path="/dashboard">
+        <Route path="home" element={<Dashboard />} />
+      </Route>
+      <Route path="*" element={<NotFound/>}/>
     </Routes>
   );
 };
