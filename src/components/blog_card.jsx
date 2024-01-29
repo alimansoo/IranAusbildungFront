@@ -1,5 +1,6 @@
 import React from "react";
 import cardimage from '../images/blogimage.png'
+import { Link } from "react-router-dom";
 
 function BlogCard(
   {
@@ -11,7 +12,11 @@ function BlogCard(
     <div className={`flex ${horizontal?'flex-row gap-7':'flex-col gap-5'} w-full rounded-lg text-right ${className}`}>
       <img src={cardimage} alt="" className="rounded"/>
       <div className="flex flex-col gap-4">
-        <div className={` ${horizontal?'text-lg leading-10':'text-base leading-9'}`}>لورم ایپسوم متن ساختگی برای طراحان میباشد که میتوانید آن را با المان های جذاب دیگر ترکیب کنید و استفاده کنید</div>
+        <div className={` ${horizontal?'text-lg leading-10':'text-base leading-9'} hover:text-primary-default hover:underline underline-offset-8`}>
+          <Link to={'/single_blog'}>
+            لورم ایپسوم متن ساختگی برای طراحان میباشد که میتوانید آن را با المان های جذاب دیگر ترکیب کنید و استفاده کنید
+          </Link>
+        </div>
         <div className="text-sm text-gray-400 leading-8">لورم ایپسوم متن ساختگی برای طراحان میباشد که میتوانید آن را با المان های جذاب دیگر ترکیب کنید و استفاده کنید. طراحان از این متن برای استفاده در سمپل های خود استفاده میکنند و ...</div>
         <div className="inline-flex gap-3 justify-start items-center">
           <span className="text-primary-default text-[14px]">راهنمای محاجرت</span>

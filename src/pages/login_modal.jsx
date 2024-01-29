@@ -3,9 +3,13 @@ import Button from '../components/button'
 import LargeLogo from '../large-logo.svg'
 import { Link } from 'react-router-dom'
 
-const login = () => {
+const loginModal = (
+  {
+    setOpen
+  }
+) => {
   return (
-    <div className='bg-gray-800 text-white h-[100vh] w-[100vw] flex flex-col gap-8 items-center justify-center'>
+    <div className='bg-gray-800 fixed top-0 left-0 bottom-0 right-0 z-50 bg-opacity-95 text-white h-[100vh] w-[100vw] flex flex-col gap-8 items-center justify-center'>
       <Link to={'/'}><img src={LargeLogo} alt='' /></Link>
       <div className='bg-white flex flex-col gap-4 w-[420px] rounded-xl p-8 text-gray-700'>
         <div className='inline-flex items-center gap-2'>
@@ -83,14 +87,14 @@ const login = () => {
           <span className='text-primary-default'><Link to={'/register'}>ثبت نام کنید!</Link></span>
         </div>
       </div>
-      <div className='inline-flex items-center gap-2'>
+      <div onClick={()=>{setOpen(false)}} className='inline-flex items-center gap-2 cursor-pointer hover:text-primary-default'>
         بازگشت
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-          <path d="M10.4067 5.55986L4 11.9999L10.4067 18.4399C10.4645 18.5158 10.538 18.5785 10.6222 18.6236C10.7064 18.6687 10.7993 18.6952 10.8946 18.7013C10.9899 18.7074 11.0854 18.6929 11.1747 18.6589C11.2639 18.6248 11.3448 18.572 11.4118 18.504C11.4789 18.436 11.5305 18.3544 11.5633 18.2646C11.596 18.1749 11.6091 18.0792 11.6017 17.984C11.5943 17.8888 11.5664 17.7963 11.5201 17.7128C11.4738 17.6292 11.4101 17.5566 11.3333 17.4999L6.54 12.6665L19.2933 12.6665C19.4701 12.6665 19.6397 12.5963 19.7647 12.4713C19.8898 12.3462 19.96 12.1767 19.96 11.9999C19.96 11.8231 19.8898 11.6535 19.7647 11.5285C19.6397 11.4034 19.4701 11.3332 19.2933 11.3332L6.54 11.3332L11.3333 6.49986C11.458 6.37433 11.5277 6.20441 11.527 6.02751C11.5264 5.8506 11.4555 5.68118 11.33 5.55653C11.2045 5.43188 11.0346 5.3622 10.8576 5.36283C10.6807 5.36345 10.5113 5.43433 10.3867 5.55986L10.4067 5.55986Z" fill="white"/>
+          <path d="M10.4067 5.55986L4 11.9999L10.4067 18.4399C10.4645 18.5158 10.538 18.5785 10.6222 18.6236C10.7064 18.6687 10.7993 18.6952 10.8946 18.7013C10.9899 18.7074 11.0854 18.6929 11.1747 18.6589C11.2639 18.6248 11.3448 18.572 11.4118 18.504C11.4789 18.436 11.5305 18.3544 11.5633 18.2646C11.596 18.1749 11.6091 18.0792 11.6017 17.984C11.5943 17.8888 11.5664 17.7963 11.5201 17.7128C11.4738 17.6292 11.4101 17.5566 11.3333 17.4999L6.54 12.6665L19.2933 12.6665C19.4701 12.6665 19.6397 12.5963 19.7647 12.4713C19.8898 12.3462 19.96 12.1767 19.96 11.9999C19.96 11.8231 19.8898 11.6535 19.7647 11.5285C19.6397 11.4034 19.4701 11.3332 19.2933 11.3332L6.54 11.3332L11.3333 6.49986C11.458 6.37433 11.5277 6.20441 11.527 6.02751C11.5264 5.8506 11.4555 5.68118 11.33 5.55653C11.2045 5.43188 11.0346 5.3622 10.8576 5.36283C10.6807 5.36345 10.5113 5.43433 10.3867 5.55986L10.4067 5.55986Z" fill="currentColor"/>
         </svg>
       </div>
     </div>
   )
 }
 
-export default login
+export default loginModal

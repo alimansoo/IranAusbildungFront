@@ -1,12 +1,15 @@
-import React from 'react';
+import React,{ useState } from 'react';
 import userlogo from './../../icons/solar_user-bold-duotone.svg'
 import MainContainer from './../container';
 import Button from './../button';
 import NavbarGenerator from './NavbarGenarator';
 import Search from './search';
 import { Link } from 'react-router-dom';
+import LoginModal from '../../pages/login_modal';
 
 function Navbar() {
+  const [ open , setOpen ] = useState(false)
+
   return (
     <div className="text-primary-default bg-gray-100 py-2 ">
       <MainContainer className={"flex justify-between align-middle items-center"}>
@@ -31,12 +34,14 @@ function Navbar() {
           </div>
           <div className='flex gap-2'>
             <Search />
-            <Link to={'/login'}>
-              <Button styleVariant='grey' className='!px-2' iconOnly={true} >
-                <img alt='' src={userlogo} />
-              </Button>
-            </Link>
+            {/* <Link to={'/login'}>
+              
+            </Link> */}
+            <Button onClick={()=>{setOpen(true)}} styleVariant='grey' className='!px-2' iconOnly={true} >
+              <img alt='' src={userlogo} />
+            </Button>
           </div>
+          {open?<LoginModal setOpen={setOpen}/>:''}
         </>
       </MainContainer>
     </div>
