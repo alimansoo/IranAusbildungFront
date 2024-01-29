@@ -4,7 +4,6 @@ import MainContainer from './../container';
 import Button from './../button';
 import NavbarGenerator from './NavbarGenarator';
 import Search from './search';
-import { Link } from 'react-router-dom';
 import LoginModal from '../../pages/login_modal';
 
 function Navbar() {
@@ -34,9 +33,6 @@ function Navbar() {
           </div>
           <div className='flex gap-2'>
             <Search />
-            {/* <Link to={'/login'}>
-              
-            </Link> */}
             <Button onClick={()=>{setOpen(true)}} styleVariant='grey' className='!px-2' iconOnly={true} >
               <img alt='' src={userlogo} />
             </Button>
