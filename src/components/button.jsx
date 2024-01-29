@@ -69,6 +69,7 @@ function Button({
   link = '',
   target = '_blank',
   iconOnly = false,
+  isFull = false
 }) {
   return (
     <>
@@ -94,7 +95,7 @@ function Button({
         <button
           onClick={onClick}
           disabled={disabled}
-          className={`inline-flex items-center justify-center relative rounded-md w-max ${objectConvert(
+          className={`inline-flex items-center justify-center relative rounded-md ${isFull? `w-full` : `w-max`} ${objectConvert(
             buttonSizes[size]
           )} ${
             disabled
