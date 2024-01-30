@@ -12,6 +12,11 @@ import FAQ from './pages/faq';
 import Login from './pages/login';
 import Register from './pages/register';
 import Dashboard from '../src/pages/dashboard/home'
+import SavedAusbildung from './pages/dashboard/saved_ausbildung';
+import YourFeatures from './pages/dashboard/your_features';
+import ListConsultations from './pages/dashboard/list_consultations';
+import EditProfile from './pages/dashboard/edit_profile';
+import SendCoverLetter from './pages/dashboard/cover_letter';
 import NotFound from './pages/NotFound';
 // import RequrieAuth from './features/requireAuth';
 // import Welcome from './features/Welcome';
@@ -19,7 +24,6 @@ import NotFound from './pages/NotFound';
 import {
   Routes,
   Route,
-  Switch
 } from "react-router-dom";
 
 const App = () => {
@@ -43,6 +47,11 @@ const App = () => {
       {/* protected routes */}
       <Route path="/dashboard">
         <Route path="home" element={<Dashboard />} />
+        <Route path="saved_ausbildung" element={<SavedAusbildung />} />
+        <Route path="your_features" element={<YourFeatures />} />
+        <Route path="list_consultations" element={<ListConsultations />} />
+        <Route path="edit_profile" element={<EditProfile />} />
+        <Route path="cover_letter" element={<SendCoverLetter />} />
       </Route>
       <Route path="*" element={<NotFound/>}/>
     </Routes>
