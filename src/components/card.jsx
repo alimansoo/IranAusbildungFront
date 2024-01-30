@@ -32,8 +32,8 @@ function Card(
           
         </div> : ''
       }
-      <div className="w-full inline-flex justify-center gap-3 bg-primary-0 hover:bg-primary-default hover:text-white text-primary-default py-3 px-2 rounded-md">
-        <span>مشاهده اطلاعات بیشتر</span>
+      <div className="w-full inline-flex justify-center gap-3 mt-3 bg-primary-0 hover:bg-primary-default hover:text-white text-primary-default py-3 px-2 rounded-md">
+        <span className="text-[14px]">مشاهده اطلاعات بیشتر</span>
         <span><img src={mingcute_left} alt=""/></span>
       </div>
       

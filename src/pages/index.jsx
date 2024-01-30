@@ -100,78 +100,21 @@ function Index() {
             نگارش  رزومه و انگیزه نامه</Button>
         </div>
         <div className='inline-flex flex-row justify-center gap-3 w-full overflow-hidden'>
-          <div className='bg-gray-100 inline-flex flex-col min-w-[16rem] rounded-t-xl px-5 pt-4 pb-0 gap-8'>
-            <div className='w-full inline-flex justify-between'>
-              <span className='font-semibold'>مشاغل پیراپزشکی</span>
-              <span className='text-primary-default'>Sanitäter</span>
-            </div>
-            <div className='w-full inline-flex justify-center align-middle'>
-              <img src={nurse} alt='' className='w-56' />
-            </div>
-          </div>
-          <div className='bg-gray-100 inline-flex flex-col min-w-[16rem] rounded-t-xl px-5 pt-4 pb-0 gap-8'>
-            <div className='w-full inline-flex justify-between'>
-              <span className='font-semibold'>مشاغل پیراپزشکی</span>
-              <span className='text-primary-default'>Sanitäter</span>
-            </div>
-            <div className='w-full inline-flex justify-center align-middle'>
-              <img src={nurse} className='w-56' alt='Sanitater' />
-            </div>
-          </div>
-          <div className='bg-gray-100 inline-flex flex-col min-w-[16rem] rounded-t-xl px-5 pt-4 pb-0 gap-8'>
-            <div className='w-full inline-flex justify-between'>
-              <span className='font-semibold'>مشاغل پیراپزشکی</span>
-              <span className='text-primary-default'>Sanitäter</span>
-            </div>
-            <div className='w-full inline-flex justify-center align-middle'>
-              <img src={nurse} className='w-56' alt='Sanitater' />
-            </div>
-          </div>
-          <div className='bg-gray-100 inline-flex flex-col min-w-[16rem] rounded-t-xl px-5 pt-4 pb-0 gap-8'>
-            <div className='w-full inline-flex justify-between'>
-              <span className='font-semibold'>مشاغل پیراپزشکی</span>
-              <span className='text-primary-default'>Sanitäter</span>
-            </div>
-            <div className='w-full inline-flex justify-center align-middle'>
-              <img src={nurse} className='w-56' alt='Sanitater' />
-            </div>
-          </div>
-          <div className='bg-gray-100 inline-flex flex-col min-w-[16rem] rounded-t-xl px-5 pt-4 pb-0 gap-8'>
-            <div className='w-full inline-flex justify-between'>
-              <span className='font-semibold'>مشاغل پیراپزشکی</span>
-              <span className='text-primary-default'>Sanitäter</span>
-            </div>
-            <div className='w-full inline-flex justify-center align-middle'>
-              <img src={nurse} className='w-56' alt='Sanitater' />
-            </div>
-          </div>
-          <div className='bg-gray-100 inline-flex flex-col min-w-[16rem] rounded-t-xl px-5 pt-4 pb-0 gap-8'>
-            <div className='w-full inline-flex justify-between'>
-              <span className='font-semibold'>مشاغل پیراپزشکی</span>
-              <span className='text-primary-default'>Sanitäter</span>
-            </div>
-            <div className='w-full inline-flex justify-center align-middle'>
-              <img src={nurse} className='w-56' alt='Sanitater' />
-            </div>
-          </div>
-          <div className='bg-gray-100 inline-flex flex-col min-w-[16rem] rounded-t-xl px-5 pt-4 pb-0 gap-8'>
-            <div className='w-full inline-flex justify-between'>
-              <span className='font-semibold'>مشاغل پیراپزشکی</span>
-              <span className='text-primary-default'>Sanitäter</span>
-            </div>
-            <div className='w-full inline-flex justify-center align-middle'>
-              <img src={nurse} className='w-56' alt='Sanitater' />
-            </div>
-          </div>
-          <div className='bg-gray-100 inline-flex flex-col min-w-[16rem] rounded-t-xl px-5 pt-4 pb-0 gap-8'>
-            <div className='w-full inline-flex justify-between'>
-              <span className='font-semibold'>مشاغل پیراپزشکی</span>
-              <span className='text-primary-default'>Sanitäter</span>
-            </div>
-            <div className='w-full inline-flex justify-center align-middle'>
-              <img src={nurse} className='w-56' alt='Sanitater' />
-            </div>
-          </div>
+          {
+            [0,0,0,0,0,0,0,0,0,0,0,0].map((value, index, array) => {
+              return (
+                <div className='bg-gray-100 inline-flex flex-col min-w-[19rem] rounded-t-xl px-5 pt-4 pb-0 gap-8'>
+                  <div className='w-full inline-flex justify-between'>
+                    <span className='font-semibold'>مشاغل پیراپزشکی</span>
+                    <span className='text-primary-default'>Sanitäter</span>
+                  </div>
+                  <div className='w-full inline-flex justify-center align-middle'>
+                    <img src={nurse} className='w-56' alt='Sanitater' />
+                  </div>
+                </div>
+              )
+            })
+          }
         </div>
         <div className='w-full inline-flex justify-center items-center bg-gray-900 text-white py-6'>
           <MainContainer className='inline-flex flex-row-reverse justify-around px-10'>
