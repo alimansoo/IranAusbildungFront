@@ -1,3 +1,4 @@
+import axios from 'axios'
 import React from 'react'
 import Button from '../components/button'
 import LargeLogo from '../large-logo.svg'
@@ -8,6 +9,31 @@ const Register = () => {
   const goBack = () => {
     window.history.back();
   };
+
+  const apiKey = process.env.ENDPOINT_URI;
+  
+  console.log(apiKey);
+
+  const OnSubmit = (e) => {
+    e.preventDefault();
+    
+    const data =
+    {
+      "firstname": "علی",
+      "lastname": "محمدی",
+      "username": "alimansi369@gmail.com",
+      "image": "/3698712222.jpg",
+      "phone": "09136547896",
+      "email": "alimansi369@gmail.com",
+      "password": "$2b$10$pjZRAFsRZmVKz04riZVtMusJ2tlzNi/ci4ndvNOiQVmHYbL1xgXeu"
+    };
+
+    axios.post("http://127.0.0.1:3500/register",data).then(res=>{
+      console.log(res);
+    }).catch(res=>{
+      console.log(res);
+    })
+  }
 
   return (
     <div className='bg-gray-800 text-white min-h-[100vh] h-max max-w-[100vw] flex flex-col gap-8 items-center justify-center py-14'>
@@ -21,7 +47,7 @@ const Register = () => {
         </div>
         <p className='text-gray-400 text-[14px]'>جهت ثبت نام ، لطفا اطلاعات زیر را وارد کنید</p>
         <div></div>
-        <form className='w-full flex flex-col gap-3' method='post'>
+        <form className='w-full flex flex-col gap-3' onSubmit={OnSubmit} method='post'>
           <div className='inline-flex flex-col gap-2'>
             <label htmlFor="" className='text-[14px] font-bold'>نام و نام خانوادگی</label>
             <div className="relative">
